@@ -6,7 +6,6 @@ Estructura:
 .
 ├── docker-compose.yml
 ├── app
-    ├── Dockerfile
     └── index.php
 
 ```
@@ -14,7 +13,7 @@ Estructura:
 ```
 services:
   web:
-    build: app
+    image: php:7.2-apache
     ports: 
       - '80:80'
     volumes:
