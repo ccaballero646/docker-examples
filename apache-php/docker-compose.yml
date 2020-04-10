@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   web:
-    build: app
+    image: php:7.2-apache
     ports: 
       - '80:80'
     volumes:
